@@ -1,0 +1,14 @@
+#python code to create a function called most_frequent that takes a string and prints the letters in decreasing order of frequency
+
+#defining function
+
+def most_frequent(mydict,name):
+           print("enter the string:"+ str(name))
+           #sorting
+           s=sorted(mydict,key=mydict.get,reverse=True)
+           for y in s:
+               print(y,"=",mydict[y])
+mydict={"m":1,"i":4,"s":4,"p":2}
+#calling function
+most_frequent(mydict,"mississippi")
+
